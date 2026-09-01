@@ -26,13 +26,13 @@ void coletar_numeros(int tam_linhas, int tam_colunas, int matriz[tam_linhas][tam
 
 void definir_matriz_transposta(int tam_linhas, int tam_colunas, int matriz[tam_linhas][tam_colunas], int matriz_transposta[tam_colunas][tam_linhas]) {
     int c, k, u, l;
-    for (c=0; c<tam_colunas; c++) {
-        for (k=0; k<tam_linhas; k++) {
+    for (c=0; c<tam_linhas; c++) {
+        for (k=0; k<tam_colunas; k++) {
             matriz_transposta[c][k] = matriz[k][c];
         }
     }
-    for (u=0; u<tam_colunas; u++) {
-        for (l=0; l<tam_linhas; l++) {
+    for (u=0; u<tam_linhas; u++) {
+        for (l=0; l<tam_colunas; l++) {
             printf("%2d ", matriz_transposta[u][l]);
         }
     printf("\n");
